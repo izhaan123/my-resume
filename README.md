@@ -1,2 +1,2 @@
 # my-resume
-Repository to host LateX code for my resume
+Repository to host LaTeX code for my resume
