@@ -1,58 +1,59 @@
 \cvsection{Work Experience}
+\vspace{-2mm}
 
 \begin{cventries}
   \cventry
     {Data Engineer}
-    {President’s Choice Bank}
+    {President's Choice Bank}
     {Toronto, ON}
     {October 2022 - PRESENT}
     {
-        \text{\bodyfontlight\bfseries Data Management}
+        \text{\bodyfontlight\bfseries Data Security \& Compliance (Tech Lead)}
         \vspace{4mm}
         \begin{cvitems}
-            \item{Deployed Dataplex in all environments to enhance data quality, management, and governance.}
-            \vspace{0.5mm}
-            \item{Enabled Data Lineage, Profiling, and Quality APIs through Terraform, alongside RBAC configuration for user access.}
-            \vspace{0.5mm}
-            \item{Developed a custom Terraform module for Auto Data Quality, simplifying scan provisioning via YAML configurations.}
-            \vspace{0.5mm}
-            \item{Designed and deployed an end-to-end pipeline to run complex Data Governance SQL queries in Dataplex using UDFs and PySpark, with optimized mappers, broadcast variable management, and detailed logging of memory usage and BigQuery metrics (slots, bytes shuffled); thoroughly tested with pytest and unit tests.}
+            \item{Led enterprise-wide data masking initiative for 1,000+ BigQuery tables addressing critical security audit requirement; architected 3-phase solution (discovery, classification, protection) using Sensitive Data Protection API and Dynamic Data Masking.}
+            \vspace{0.3mm}
+            \item{Coordinated technical design through senior architecture review committee and collaborated with compliance, security, and audit teams to validate approach and establish Q1 2026 delivery timeline.}
+            \vspace{0.3mm}
+            \item{Designed centralized governance model using Data Catalog policy tags with automated discovery scans, reducing manual classification overhead across enterprise data assets.}
         \end{cvitems}
         \vspace{5mm}
-        \text{\bodyfontlight\bfseries Data Enablement}
+        \text{\bodyfontlight\bfseries Data Platform Architecture \& Governance (Tech Lead)}
         \vspace{4mm}
         \begin{cvitems}
-            \item{Lead initiatives to build GCP tools and pipelines to optimize workflows and enhance efficiency for 50+ analysts and provide support to 8 teams.}
-            \vspace{0.5mm}
-            \item {Spearheaded the implementation of a solution facilitating file import from SAS to GCP, empowering analysts on the GCP platform.}
-            \vspace{0.5mm}
-            \item {Developed and embedded SSH connectivity code into custom Airflow operators with a defer mechanism, streamlining file transfers to and from Google Cloud Storage, while also pioneering a generalized solution for auditing Airflow tasks, improving audit trails and resource efficiency.}
+            \item{Led Dataplex Governance Expansion initiative; designed and built BigQuery Inventory Collector to discover and catalog metadata across all GCP projects, enabling automated governance for 1,000+ tables without manual configuration.}
+            \vspace{0.3mm}
+            \item{Architected end-to-end data quality framework migrating from legacy system to Dataplex; developed serverless PySpark pipeline with optimized execution (broadcast variables, memory profiling, BigQuery metrics tracking), reducing scan provisioning complexity through YAML configurations.}
+            \vspace{0.3mm}
+            \item{Built custom Terraform module for Auto Data Quality, simplifying scan provisioning via YAML configurations.}
+            \vspace{0.3mm}
+            \item{Deployed Dataplex across all environments with Data Lineage, Profiling, and Quality APIs via Terraform; implemented RBAC for user access.}
         \end{cvitems}
         \vspace{5mm}
-        \text{\bodyfontlight\bfseries Jira Analytics}
+        \text{\bodyfontlight\bfseries Production Systems \& Engineering Excellence}
         \vspace{4mm}
-    \begin{cvitems}
-        \item{Led a team as the technical lead, mentoring 5 co-op students and guiding efficient solution design.}
-        \vspace{0.5mm}
-        \item{Established development processes, pipelines, and a production release cycle for seamless project execution.}
-        \vspace{0.5mm}
-        \item{Built an ETL pipeline using Airflow to extract data from Jira Cloud, transform it in BigQuery, and load it into curated tables.}
-        \vspace{0.5mm}
-        \item{Employed caching mechanisms to optimize performance by processing only incremental data changes.}
-        \vspace{0.5mm}
-        \item{Designed a visualization tool-agnostic architecture, centralizing all calculations in BigQuery for flexibility and scalability.}
-        \vspace{0.5mm}
-        \item{Delivered interactive dashboards in Looker for SMT to track team workloads, initiative progress, and time allocation for data-driven decisions.}
-    \end{cvitems}
-    \vspace{5mm}
-    \text{\bodyfontlight\bfseries Technical Enablement}
-    \vspace{4mm}
-    \begin{cvitems}
-        \item {Enhanced DAG failure reporting and ownership by implementing a metadata-driven solution, seamlessly integrating with the SRE's framework.}
-        \vspace{0.5mm}
-        \item {Mentored a co-op student to deliver a Looker dashboard with Talent Acquisition metrics using Workday API for HR in lower environments.}
-        \vspace{0.5mm}
-        \item {Conducted a workshop for 30+ business analysts on version control concepts, covering systems like Local, Centralized, and Distributed, with a focus on Git, and demonstrated GitLab features, including creating merge requests and resolving conflicts.}
-    \end{cvitems}
+        \begin{cvitems}
+            \item{Redesigned critical customer data processing pipeline with recurring stability issues; eliminated years of technical debt through code standardization, comprehensive documentation, and architectural simplification, achieving zero production incidents post-deployment.}
+            \vspace{0.3mm}
+            \item{Led analytics pipeline to production after multi-term development cycle; architected visualization-agnostic solution with centralized BigQuery calculations and caching optimizations; delivered Tableau dashboards for leadership workload tracking and initiative monitoring; mentored 5 co-ops.}
+            \vspace{0.3mm}
+            \item{Integrated AI tooling into development workflows to accelerate code reviews, documentation generation, and technical exploration.}
+            \vspace{0.3mm}
+            \item{Enhanced DAG failure reporting with metadata capture (owner, priority, business capability) enabling automated SRE alerts and Slack notifications.}
+            \vspace{0.3mm}
+            \item{Conducted Git workshop for 30+ business analysts covering version control concepts and GitLab best practices.}
+        \end{cvitems}
+        \vspace{5mm}
+        \text{\bodyfontlight\bfseries Data Enablement \& Infrastructure}
+        \vspace{4mm}
+        \begin{cvitems}
+            \item{Led initiatives building GCP tools and pipelines to optimize workflows and enhance efficiency for 50+ analysts across 8 teams.}
+            \vspace{0.3mm}
+            \item{Spearheaded implementation of file import solution facilitating data migration from SAS to GCP, empowering analysts to transition to cloud platform.}
+            \vspace{0.3mm}
+            \item{Developed and embedded SSH connectivity code into custom Airflow operators with defer mechanism, streamlining file transfers to/from GCS.}
+            \vspace{0.3mm}
+            \item{Pioneered callback-based audit framework for Airflow DAGs using XCom and BigQuery, establishing reusable observability pattern adopted across transfer and processing pipelines.}
+        \end{cvitems}
     }
 \end{cventries}
